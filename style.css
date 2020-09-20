@@ -5,11 +5,6 @@
     text-decoration: none;
     font-family: erdana, Geneva, sans-serif;
 }
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .header {
     padding: 30px;
     text-align: center;
