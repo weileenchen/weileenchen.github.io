@@ -5,6 +5,11 @@
     text-decoration: none;
     font-family: erdana, Geneva, sans-serif;
 }
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header {
     padding: 30px;
     display: block;
@@ -20,18 +25,4 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-h1{text-align: center;}
-h2{text-align: center;}
-p {text-align: center;}
-figcaption {
-    text-align: center;
-}
-
-div {
-    max-width: 800px;
-      max-height: 2400px;
-    background-color: lightblue;
-    font-size: 16px;
-    padding: 10px;
 }
