@@ -8,6 +8,7 @@
 .header {
     padding: 30px;
     text-align: center;
+    display: block;
     background-color: #f1f1f1;
 }
 .button {
