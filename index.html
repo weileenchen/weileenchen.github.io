@@ -1,29 +1,50 @@
 <html>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: erdana, Geneva, sans-serif;
+            
+        }
+        .center {
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+  			width: 50%;
+		}
         .header {
-            overflow: hidden;
+            width: 100%;
+            height: 80px;
+            display: block;
+            text-align: center;
             background-color: #f1f1f1;
-            padding: 20px 10px;
         }
         .header a {
             float: left;
             color: black;
             text-align: center;
-            padding: 12px;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
-            border-radius: 4px;
         }
+
     </style>
-    <head style= "font-family: erdana, Geneva, sans-serif;">
+    <head>
         <link rel="icon" href="https://weileenchen.github.io/Images/jin_icon.png">
 		<title>Weileen Chen</title>
 	</head>
     <body style = "background-color:lightblue;">
-        <h1>Intro to Web Dev</h1>
-        <a href="weileenchen.github.io/Week02/index.html"><button>Week 2</button></a>
-        <a href="weileenchen.github.io/Week03/index.html"><button>Week 3</button></a>
+        <div class="header">
+            <div class="header a">
+                <h1>Intro to Web Dev</h1>
+            </div>
+        </div>
+        <div class="center";>
+            <a href="weileenchen.github.io/Week02/index.html"><button>Week 2</button></a>
+        </div>
+        <div class="center";>
+            <a href="weileenchen.github.io/Week03/index.html"><button>Week 3</button></a>
+        </div>
     </body>
 </html>
 
