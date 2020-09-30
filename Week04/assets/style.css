@@ -275,6 +275,7 @@
 /* style for the history page */
 #history {
     overflow: hidden;
+    background-color: #a6293a;
 }
 
 .history-flex {
