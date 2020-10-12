@@ -93,6 +93,8 @@ a {
     grid-template-columns: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
     grid-template-rows: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
     --heart: #E3242B;
+    --black: black;
+    --white: white;
     margin: 100px;
     width: 500px;
     height: 500px;
@@ -101,9 +103,11 @@ a {
 
 #art:hover {
     --heart: blue;
+    --black: red;
+    --white: lightgrey;
 }
 .art_black {
-    background: black;
+    background: var(--black);
 }
 
 .art_black:hover {
@@ -111,7 +115,7 @@ a {
 }
 
 .art_white {
-    background: white;
+    background: var(--white);
 }
 
 .art_white:hover {
