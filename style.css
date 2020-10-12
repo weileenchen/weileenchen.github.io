@@ -10,11 +10,11 @@
     vertical-align: middle;
 }
 
-#home {
+.home {
     background-color: #f1f1f1;
 }
 
-#home_header {
+.home_header {
     background-color: lightblue;
     width: 100%;
     color: #282828;
@@ -22,12 +22,12 @@
     justify-content: space-between;
 }
 
-#home_header > h1 {
+.home_header > h1 {
     font-size: 30px;
     padding: 30px;
 }
 
-#home_header > h2{
+.home_header > h2{
     font-size: 30px;
     padding: 30px;
 }
@@ -81,3 +81,275 @@ a {
     display: block;
     background-color: #f1f1f1;
 }
+
+/* interactive art */
+#art_center{
+    display: flex;
+    justify-content: center;
+}
+
+#art {
+    display: grid;
+    grid-template-columns: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+    grid-template-rows: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+    --heart: #E3242B;
+    margin: 100px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+#art:hover {
+    --heart: blue;
+}
+.art_black {
+    background: black;
+}
+
+.art_black:hover {
+    background: green;
+}
+
+.art_white {
+    background: white;
+}
+
+.art_white:hover {
+    background: yellow;
+}
+
+#blue_heart {
+    background-color: lightblue;
+    padding: 50px;
+}
+
+#blue_heart:hover{
+    background: white;
+    --heart: blue;
+}
+
+.art_heart{
+    background: var(--heart);
+}
+
+.art_heart:hover {
+    background: purple;
+}
+
+/*
+#art_grid {
+    margin-left: 60px;
+    width: 30px;
+    height: 30px;
+    background: black;
+    box-shadow: 
+        30px 0px black,
+        60px 0px black,
+        540px 0px black,
+        570px 0px black,
+        600px 0px black,
+
+        -30px 30px black,
+        0px 30px black,
+        30px 30px black,
+        60px 30px black,
+        90px 30px black,
+        180px 30px black,
+        210px 30px black,
+        240px 30px black,
+        270px 30px black,
+        300px 30px black,
+        330px 30px black,
+        360px 30px black,
+        390px 30px black,
+        420px 30px black,
+        510px 30px black,
+        540px 30px black,
+        570px 30px black,
+        600px 30px black,
+        630px 30px black,
+
+        -60px 60px black,
+        -30px 60px black,
+        0px 60px black,
+        30px 60px black,
+        60px 60px black,
+        90px 60px black,
+        120px 60px black,
+        150px 60px black,
+        180px 60px white,
+        210px 60px white,
+        240px 60px white,
+        270px 60px white,
+        300px 60px white,
+        330px 60px white,
+        360px 60px white,
+        390px 60px white,
+        420px 60px white,
+        450px 60px black,
+        480px 60px black,
+        510px 60px black,
+        540px 60px black,
+        570px 60px black,
+        600px 60px black,
+        630px 60px black,
+        660px 60px black,
+
+        -60px 90px black,
+        -30px 90px black,
+        0px 90px black,
+        30px 90px black,
+        60px 90px white,
+        90px 90px white,
+        120px 90px white,
+        150px 90px white,
+        180px 90px white,
+        210px 90px white,
+        240px 90px white,
+        270px 90px white,
+        300px 90px white,
+        330px 90px white,
+        360px 90px white,
+        390px 90px white,
+        420px 90px white,
+        570px 90px black,
+        600px 90px black,
+        630px 90px black,
+        660px 90px black,
+
+        -60px 120px black,
+        -30px 120px black,
+        0px 120px black,
+        600px 120px black,
+        630px 120px black,
+        660px 120px black,
+
+        -30px 150px black,
+        630px 150px black,
+        -30px 180px black,
+        630px 180px black,
+        -60px 210px black,
+        660px 210px black,
+        -60px 240px black,
+        660px 240px black,
+        -60px 270px black,
+        660px 270px black,
+        -60px 300px black,
+        660px 300px black,
+        -60px 330px black,
+        660px 330px black,
+        -60px 360px black,
+        660px 360px black,
+        -60px 390px black,
+        660px 390px black,
+
+        -30px 420px black,
+        630px 420px black,
+        -30px 450px black,
+        630px 450px black,
+        -30px 480px black,
+        630px 480px black,
+        -30px 510px black,
+        630px 510px black,
+        -30px 540px black,
+        630px 540px black,
+        -30px 570px black,
+        630px 570px black,
+        -30px 600px black,
+        630px 600px black,
+
+        0px 450px black,
+        0px 480px black,
+        0px 510px black,
+        0px 540px black,
+        0px 570px black,
+        0px 600px black,
+        0px 630px black,
+        600px 450px black,
+        600px 480px black,
+        600px 510px black,
+        600px 540px black,
+        600px 570px black,
+        600px 600px black,
+        600px 630px black,
+
+        30px 450px black,
+        30px 480px black,
+        30px 510px black,
+        30px 540px black,
+        30px 570px black,
+        30px 600px black,
+        30px 630px black,
+        30px 660px black,
+        570px 450px black,
+        570px 480px black,
+        570px 510px black,
+        570px 540px black,
+        570px 570px black,
+        570px 600px black,
+        570px 630px black,
+        570px 660px black,
+
+        60px 450px black,
+        60px 480px black,
+        60px 510px black,
+        60px 540px black,
+        60px 570px black,
+        60px 600px black,
+        60px 630px black,
+        60px 660px black,
+        540px 450px black,
+        540px 480px black,
+        540px 510px black,
+        540px 540px black,
+        540px 570px black,
+        540px 600px black,
+        540px 630px black,
+        540px 660px black,
+        
+        90px 450px black,
+        90px 480px black,
+        90px 510px black,
+        90px 540px black,
+        90px 570px black,
+        90px 600px black,
+        90px 630px black,
+        90px 660px black,
+        510px 450px black,
+        510px 480px black,
+        510px 510px black,
+        510px 540px black,
+        510px 570px black,
+        510px 600px black,
+        510px 630px black,
+        510px 660px black,
+
+        120px 480px black,
+        120px 510px black,
+        120px 540px black,
+        120px 570px black,
+        120px 600px black,
+        120px 630px black,
+        120px 660px black,
+        480px 480px black,
+        480px 510px black,
+        480px 540px black,
+        480px 570px black,
+        480px 600px black,
+        480px 630px black,
+        480px 660px black,
+
+        150px 510px black,
+        150px 540px black,
+        150px 570px black,
+        150px 600px black,
+        150px 630px black,
+        450px 510px black,
+        450px 540px black,
+        450px 570px black,
+        450px 600px black,
+        450px 630px black;
+
+        
+}
+*/
