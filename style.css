@@ -17,7 +17,7 @@
 .home_header {
     background-color: lightblue;
     width: 100%;
-    color: #282828;
+    color: white;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -116,16 +116,6 @@ a {
 
 .art_white:hover {
     background: yellow;
-}
-
-#blue_heart {
-    background-color: lightblue;
-    padding: 50px;
-}
-
-#blue_heart:hover{
-    background: white;
-    --heart: blue;
 }
 
 .art_heart{
