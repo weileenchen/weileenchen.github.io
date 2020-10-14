@@ -83,7 +83,7 @@ a {
 }
 
 /* interactive art */
-#art_center{
+.center{
     display: flex;
     justify-content: center;
 }
@@ -128,4 +128,11 @@ a {
 
 .art_heart:hover {
     background: purple;
+}
+
+/* Wireframe Images */
+.im {
+    margin: 30px;
+    width: auto;
+    height: 600px;
 }
