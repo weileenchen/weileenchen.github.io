@@ -175,3 +175,10 @@ a {
     outline-color: black;
     outline-style: solid;
 }
+
+#poem {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+
+}
