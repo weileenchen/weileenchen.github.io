@@ -63,7 +63,7 @@ a {
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
     grid-template-rows: 20% 20% 20% 20% 20%; 
     width: 1000px;
-    height: 500px;
+    height: auto;
     outline-color: black;
 }
 /*
