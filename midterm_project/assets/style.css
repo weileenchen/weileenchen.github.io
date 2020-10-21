@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.home {
+    background-color: #f1f1f1;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+a {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Wireframe Images */
+.im {
+    margin: 30px;
+    width: auto;
+    height: 600px;
+}
+
+.collage {
+    display: grid;
+}
+
+.midterm_header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.midterm_header > h1 {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.midterm_header > h2{
+    font-size: 30px;
+    margin: 30px;
+}
+
+
+#midterm_art1{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    width: 1000px;
+    height: 500px;
+    outline-color: black;
+}
+/*
+#midterm_art1 > div{
+    background-color: grey;
+    outline-color: black;
+    outline-style: solid;
+}*/
+
+
+.collage_1_blue{
+    content:url(./collage1/blue.jpg);
+    width: 100%;
+    height: auto;
+}
+
+.collage_1_blue1{
+    content:url(./collage1/blue2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_blue2{
+    content:url(./collage1/blue2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+#collage_1_green{
+    content:url(./collage1/green.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_purple{
+    content:url(./collage1/purple.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_purple1{
+    content:url(./collage1/purple1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_purple2{
+    content:url(./collage1/purple2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_red {
+    content:url(./collage1/red.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_1_red1 {
+    content:url(./collage1/red1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_1_red2 {
+    content:url(./collage1/red2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_yellow {
+    content:url(./collage1/yellow.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+
+.collage_1_yellow1 {
+    content:url(./collage1/yellow1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_1_yellow2 {
+    content:url(./collage1/yellow2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+
+.collage_1_white {
+    content:url(./collage1/white.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_1_white1 {
+    content:url(./collage1/white1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_1_white2 {
+    content:url(./collage1/white2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+/*Second Collage*/
+.collage_2_blue{
+    content:url(./collage2/blue.jpg);
+    width: 100%;
+    height: auto;
+}
+
+.collage_2_blue1{
+    content:url(./collage2/blue1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_blue2{
+    content:url(./collage2/blue2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+#collage_2_unique{
+    content:url(./collage2/unique1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_purple{
+    content:url(./collage2/purple.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_purple1{
+    content:url(./collage2/purple1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_purple2{
+    content:url(./collage2/purple2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_red {
+    content:url(./collage2/red.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_2_red1 {
+    content:url(./collage2/red1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_2_red2 {
+    content:url(./collage2/red2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_yellow {
+    content:url(./collage2/yellow.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+
+.collage_2_yellow1 {
+    content:url(./collage2/yellow1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+.collage_2_yellow2 {
+    content:url(./collage2/yellow2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+
+.collage_2_green {
+    content:url(./collage2/green.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_2_green1 {
+    content:url(./collage2/green1.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+.collage_2_green2 {
+    content:url(./collage2/green2.jpg);
+    width: 100%;
+    height: auto;
+     
+}
+
+#poem {
+    width: 400px;
+    height: 700px;
+    text-align: center;
+
+}
