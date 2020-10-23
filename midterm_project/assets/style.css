@@ -7,13 +7,13 @@
 }
 
 .home {
-    background-color: #f1f1f1;
+    background-color: black/*#f1f1f1*/;
 }
 
 .center{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    vertical-align: center;
 }
 
 a {
@@ -26,6 +26,14 @@ a {
     height: 100%;
     text-align: center;
     vertical-align: middle;
+}
+
+.unique {
+    cursor: default;
+}
+
+.unique:hover {
+    filter: grayscale();
 }
 
 /* Wireframe Images */
@@ -59,6 +67,7 @@ a {
 
 
 #midterm_art1{
+    padding: 5%;
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
     grid-template-rows: 20% 20% 20% 20% 20%; 
@@ -66,16 +75,22 @@ a {
     height: auto;
     outline-color: black;
 }
-/*
-#midterm_art1 > div{
-    background-color: grey;
-    outline-color: black;
-    outline-style: solid;
-}*/
 
+#midterm_art1 > div:hover { 
+    filter: grayscale();
+}
+
+#big_text{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 90px;
+    padding: 10%;
+}
 
 .collage_1_blue{
     content:url(./collage1/blue.jpg);
+    filter: hue-rotate(70);
     width: 100%;
     height: auto;
 }
@@ -295,7 +310,17 @@ a {
 
 #poem {
     width: 400px;
-    height: 700px;
+    font-size: 18px;
+    color: white;
     text-align: center;
 
+}
+
+#reflection {
+    color: white;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 40px;
 }
