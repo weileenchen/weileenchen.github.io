@@ -150,6 +150,11 @@ img {
     height: auto;
 }
 
+.collage_1_unique{
+    background: linear-gradient(rgba(51, 238, 4, 0.603),rgba(51, 238, 4, 0.603)) no-repeat top center;
+    background-size: 100%;
+}
+
 .collage_1_purple{
     background: linear-gradient(rgba(98, 6, 202, 0.65),rgba(98, 6, 202, 0.65)), url(./collage1/white.jpg) no-repeat top center;
     background-size: 100%;
@@ -246,11 +251,6 @@ img {
     content:url(./collage2/unique1.jpg);
     width: 100%;
     height: auto;
-}
-
-.collage_2_unique{
-    background: linear-gradient(rgba(51, 238, 4, 0.603),rgba(51, 238, 4, 0.603)) no-repeat top center;
-    background-size: 100%;
 }
 
 .collage_2_purple{
