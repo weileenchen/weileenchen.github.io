@@ -13,6 +13,7 @@
 .center{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -318,6 +319,7 @@ img {
     font-weight: bold;
     padding: 20px;
     text-align: center;
+    align-self: center;
 }
 
 .bottom_answer {
@@ -325,6 +327,8 @@ img {
     font-size: 2vw;
     font-weight: bold;
     padding: 20px;
+    text-align: center;
+    align-self: center;
 }
 
 #poem {
