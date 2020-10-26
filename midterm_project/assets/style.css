@@ -248,6 +248,11 @@ img {
     height: auto;
 }
 
+.collage_2_unique{
+    background: linear-gradient(rgba(51, 238, 4, 0.603),rgba(51, 238, 4, 0.603)) no-repeat top center;
+    background-size: 100%;
+}
+
 .collage_2_purple{
     background: linear-gradient(rgba(94, 4, 238, 0.3),rgba(94, 4, 238, 0.3)), url(./collage2/0.jpg) no-repeat top center;
     background-size: 100%;
