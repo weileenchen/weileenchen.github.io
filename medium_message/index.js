@@ -3,9 +3,6 @@ let theText = document.querySelector('h1');
 let email=document.querySelector(".email");
 let tweet=document.querySelector(".tweet");
 let text=document.querySelector(".text");
-email.addEventListener('click', emailFunc);
-tweet.addEventListener('onClick', tweetFunc());
-text.addEventListener('click', textFunc);
 
 function emailFunc(){
     document.getElementById('myImage').src="./email.jpg";
