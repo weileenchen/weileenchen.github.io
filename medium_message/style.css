@@ -9,14 +9,21 @@
 
 h1 {
     padding: 20px;
+    height: 5%;
 }
+
 a {
     color: #282828;
 }
+
+a:hover {
+    font-size: 34px;
+}
+
 h2 {
     padding: 2%;
     color: #282828;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
