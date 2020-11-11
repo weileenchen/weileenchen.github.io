@@ -41,6 +41,7 @@ button {
     font-family: 'Lobster', cursive;
     min-height: 100px;
     max-width: 100px;
+    outline: none;
 }
 
 button:hover {
@@ -48,6 +49,7 @@ button:hover {
     min-width: 105px;
     cursor: pointer;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    outline: none;
 }
 
 #mail {
