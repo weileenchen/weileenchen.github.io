@@ -77,10 +77,10 @@ button:hover {
 #display {
     margin: auto;
     width: 50%;
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 #display > img {
     width: 100%;
-    height: auto;
+    max-height: 500px;
 }
