@@ -31,10 +31,17 @@ $.fn.time = function(options) {
    
     return this.each(function() {
     var obj = $(this); 
-    obj.html('<canvas id="canvas" width="400" height="400"> </canvas>');
+    obj.html('<canvas id="canvas"> </canvas>');
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var radius = canvas.height / 2;
+    var size = 400;
+    canvas.style.width = size + "px";
+    canvas.style.height = size + "px";
+    var scale = window.devicePixelRatio; // <--- Change to 1 on retina screens to see blurry canvas.
+    canvas.width = size * scale;
+    canvas.height = size * scale;
+    ctx.scale(scale, scale);
+    var radius = canvas.height / 4;
     ctx.translate(radius, radius);
     radius = radius * 0.90  
     function drawClock() {
@@ -44,7 +51,7 @@ $.fn.time = function(options) {
     }
     
     function drawFace(ctx, radius) {
-        var grad;
+        var scale = window.devicePixelRatio; // <--- Change to 1 on retina screens to see blurry canvas.
         ctx.beginPath();
         ctx.arc(0, 0, radius, 0, 2*Math.PI);
         ctx.fillStyle = '#EC0868';
