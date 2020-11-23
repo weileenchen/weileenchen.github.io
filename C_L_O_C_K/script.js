@@ -54,7 +54,7 @@ $.fn.time = function(options) {
         var scale = window.devicePixelRatio; // <--- Change to 1 on retina screens to see blurry canvas.
         ctx.beginPath();
         ctx.arc(0, 0, radius, 0, 2*Math.PI);
-        ctx.fillStyle = '#EC0868';
+        ctx.fillStyle = '#c9d6ff';
         ctx.fill();
         ctx.strokeStyle = 'white';
         ctx.lineWidth = radius*0.02;
