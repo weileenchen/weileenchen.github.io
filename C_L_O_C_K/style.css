@@ -33,6 +33,7 @@ button {
     letter-spacing: 2px;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
 }
 button:hover{
 	background: #fff;
