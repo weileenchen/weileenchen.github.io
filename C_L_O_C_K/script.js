@@ -99,13 +99,12 @@ $.fn.time = function(options) {
         var second = now.getSeconds();
         //hour
         if (twelveHours) {
-            hour=(hour%12)*(Math.PI/6);
+            hour=(hour%12)*(Math.PI/6)+ (minute*Math.PI/(6*60))+
+            (second*Math.PI/(360*60));;
         } else {
-            hour=(hour%12)*(Math.PI/12);
+            hour=hour*(Math.PI/12)+(minute*Math.PI/(12*60))+
+            (second*Math.PI/(360*60));
         }
-        hour=hour+
-        (minute*Math.PI/(6*60))+
-        (second*Math.PI/(360*60));
         drawHand(ctx, hour, radius*0.65, radius*0.015);
         //minute
         minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
