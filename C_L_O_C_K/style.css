@@ -37,6 +37,7 @@ button {
 button:hover{
 	background: #fff;
     color: #EC0868;
+    outline: none;
 }
 h1 {
 	margin-block-start: 0em;
