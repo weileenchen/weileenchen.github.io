@@ -1,3 +1,5 @@
+//https://www.npmjs.com/package/typewriter-effect
+
 var iAm = document.getElementById('iAm');
 
 var typewriter = new Typewriter(iAm, {
