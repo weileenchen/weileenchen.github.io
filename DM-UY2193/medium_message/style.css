@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    padding: 20px;
+    height: 5%;
+}
+
+a {
+    color: #282828;
+}
+
+a:hover {
+    font-size: 34px;
+}
+
+h2 {
+    padding: 2%;
+    color: #282828;
+    font-size: 35px;
+    text-align: center;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lobster', cursive;
+    min-height: 100px;
+    max-width: 100px;
+    outline: none;
+}
+
+button:hover {
+    min-height: 105px;
+    min-width: 105px;
+    cursor: pointer;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+#mail {
+    background:url(./mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;   
+    width: 100%;
+    height: auto;
+}
+
+#twitter {
+    background:url(./twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;   
+    width: 100%;
+    height: auto;
+}
+
+#imessage {
+    background:url(./imessage.png);
+    background-repeat: no-repeat;
+    background-size: contain;   
+    width: 100%;
+    height: auto;
+}
+
+#display {
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+}
+
+#display > img {
+    width: 100%;
+    max-height: 500px;
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+.home {
+    background-color: #f1f1f1;
+}
+
+.home_header {
+    background-color: lightblue;
+    width: 100%;
+    color: white;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.home_header > h1 {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.home_header > h2{
+    font-size: 30px;
+    padding: 30px;
+}
+
+#home_center {
+    display: flex;
+}
+
+#left{
+    width: 75%;
+}
+
+#before {
+    height: 70%;
+}
+
+#image {
+    content:url(./images/railroad.jpg);
+    max-width: 600px;
+    max-height: auto;
+}
+
+#buttons-bar{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #008CBA;
+    justify-content: space-around;
+}
+
+a {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#filler {
+    background-color: lightblue;
+    width: 10%;
+}
+
+/* week02 */
+.header {
+    padding: 30px;
+    text-align: center;
+    display: block;
+    background-color: #f1f1f1;
+}
+
+/* interactive art */
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#art {
+    display: grid;
+    grid-template-columns: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+    grid-template-rows: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
+    --heart: #E3242B;
+    --black: black;
+    --white: white;
+    margin: 100px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+#art:hover {
+    --heart: blue;
+    --black: red;
+    --white: lightgrey;
+}
+.art_black {
+    background: var(--black);
+}
+
+.art_black:hover {
+    background: green;
+}
+
+.art_white {
+    background: var(--white);
+}
+
+.art_white:hover {
+    background: yellow;
+}
+
+.art_heart{
+    background: var(--heart);
+}
+
+.art_heart:hover {
+    background: purple;
+}
