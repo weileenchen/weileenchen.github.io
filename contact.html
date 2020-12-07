@@ -15,6 +15,25 @@
             </div>
         </div>
         <div class="content">
+            <div class="title">CONTACT</div>
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="contact-form-handler.php">
+                    <div id="info">
+                        <div class="field-half">
+                            <label for="name"> NAME </label>
+                            <input name="name" type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="field-half">
+                            <label for="email"> EMAIL </label>
+                            <input name="email" type="email" class="form-control" placeholder="" required>
+                        </div>
+                    </div>
+                    <label for="message"> MESSAGE </label>
+                    <textarea name="message" class="form-control" placeholder="" rows="10" required></textarea>
+                    <br>
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                </form>
+            </div>
         </div>
     </body>
     <script src="./assets/script.js"></script>
