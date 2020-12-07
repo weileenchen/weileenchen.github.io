@@ -7,7 +7,7 @@
 #homepage {
     min-height: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(175, 175, 175, 0.3),rgba(175, 175, 175, 0.3)), url(./alaska.jpg) no-repeat top center;
+    background: linear-gradient(rgba(175, 175, 175, 0.3),rgba(175, 175, 175, 0.3)), url(./images/alaska.jpg) no-repeat top center;
     background-size: cover;
 }
 .fade-in {
@@ -234,6 +234,7 @@ form > .submit {
   background: transparent;
   border-color: white;
   font-size: 1.5vw;
+  margin: 2vw 0 1vw 0;
   padding: 1vw;
   color: rgb(159, 159, 160);
 }
