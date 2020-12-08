@@ -1,0 +1,66 @@
+* {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.pages {
+    /*background-color: #d6e4ee;*/
+    display: flex;
+    flex-direction: column;
+    /*background-color: #edf6fd;*/
+    background-color: rgba(163, 185, 202, 0.5);
+}
+.navbar {
+    margin: 3vw;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .selected {
+    color: rgb(159, 159, 160);
+    font-weight: normal;
+    text-shadow: none;
+    cursor: default;
+  }
+  
+  .navbar > a {
+    color: rgb(159, 159, 160);
+    padding: 1vw;
+  }
+  
+  
+  .navbar > a:hover {
+    color: #7c8288;
+    text-shadow: 1px 1px 1px #aaa;
+  }
+
+  .content {
+    /*background-color: rgba(181, 190, 197, 0.5);*/
+    background-color: rgba(255,255, 255, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: rgb(159, 159, 160);
+    margin: 0 20% 5% 20%;
+    justify-content: center;
+  }  
+
+  .title {
+    animation: fadeIn ease 2s;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 2vw;
+    margin-bottom: 0;
+    padding: none;
+  }
+
+  .text {
+    animation: fadeIn ease 2s;
+    margin: 2vw;
+    font-size: 1.25vw;
+  }
