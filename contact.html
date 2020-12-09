@@ -1,60 +1,49 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
-    <title>CONTACT</title>
-</head>
-
-<body class="pages">
-    <div> 
-        <div class="navbar">
-            <a href="./home.html">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./projects.html">PROJECTS</a>
-            <a><div class="selected">CONTACT</div></a>
-        </div>
-    </div>
-
-
-<!-- START HERE -->
-  <div class="content">
-    <div class="title">CONTACT</div>
-    <div class="contact-form">
-    <form id="contact-form" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-    action="https://script.google.com/macros/s/AKfycbyGjRLjBaBsXqyCS1MdD8nRxf9QmMkZ0njMT0TSN8ZYVYvoFjg/exec">
-        <!-- change the form action to your script url -->
-        <div id="info">
-            <div class="field-half">
-                <label for="name">NAME </label>
-                <input name="name" class="form-control" placeholder="" />
-            </div>
-            <div class="field-half">
-                <label for="email">EMAIL:</label>
-                <input name="email" type="email" class="form-control" value=""
-                required placeholder=""/>
-                <span class="email-invalid" style="display:none">
-                    Must be a valid email address</span>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="icon" href="./assets/images/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap" rel="stylesheet">
+        <title>contact</title>
+    </head>
+    <body class="pages">
+        <div> 
+            <div class="navbar">
+                <a href="./home.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./projects.html">PROJECTS</a>
+                <a><div class="selected">CONTACT</div></a>
             </div>
         </div>
-        <label for="message">MESSAGE: </label>
-        <textarea name="message" class="form-control" rows="10"
-        placeholder=""></textarea>
-      
-        <input id="submit" type="submit" class="form-control submit" value="SEND MESSAGE">
-    </div>
-
-  </form>
-  </div>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="./assets/form-submission-handler.js"></script>
-<!-- END -->
-
-</body>
+        <div class="content">
+            <div class="fadeIn">
+            <div class="title">CONTACT</div>
+            <div class="contact-form">
+                <form id="contact-form" class="gform" method="POST" data-email="example@email.net"
+                action="https://script.google.com/macros/s/AKfycbyGjRLjBaBsXqyCS1MdD8nRxf9QmMkZ0njMT0TSN8ZYVYvoFjg/exec">
+                    <!-- change the form action to your script url -->
+                    <div id="info">
+                        <div class="field-half">
+                            <label for="name">NAME </label>
+                            <input name="name" class="form-control" placeholder="" />
+                        </div>
+                        <div class="field-half">
+                            <label for="email">EMAIL</label>
+                            <input name="email" type="email" class="form-control" value="" required placeholder=""/>
+                            <span class="email-invalid" style="display:none">EMAIL ADDRESS INVALID</span>
+                        </div>
+                    </div>
+                        <label for="message">MESSAGE </label>
+                        <textarea name="message" class="form-control" rows="10"placeholder=""></textarea>
+                        <input id="submit" type="submit" class="form-control submit" onclick="feedback()" value="SEND MESSAGE">
+                        <div id="submitted">Your message was sent!</div>
+                </form>
+            </div>
+            <div id="socials">
+                <a href="https://github.com/weileenchen" id="github"><img src="./assets/images/icons/github.png"></a>
+                <a href="https://www.linkedin.com/in/weileen-chen/" id="linkedin"><img src="./assets/images/icons/linkedin.png"></a>
+            </div>
+        </div>
+        <script data-cfasync="false" type="text/javascript" src="./assets/form-submission-handler.js"></script>
+    </body>
 </html>

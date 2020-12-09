@@ -72,13 +72,17 @@
       xhr.onreadystatechange = function() {
           console.log(xhr.status, xhr.statusText);
           console.log(xhr.responseText);
-          var formElements = form.querySelector(".contact-form")
+          var formElements = form.querySelector("#submit")
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
+          var thankYouMessage = form.querySelector("#submitted");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
+          }
+          var invalid = form.querySelector(".email-invalid");
+          if (invalid) {
+            invalid.style.display = "none";
           }
           return;
       };
@@ -101,7 +105,7 @@
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
+    var buttons = form.querySelectorAll("input");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }

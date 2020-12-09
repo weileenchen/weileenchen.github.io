@@ -14,4 +14,7 @@ typewriter.typeString('a student')
     .deleteAll()
     .typeString('a creator')
     .pauseFor(2000)
+    .typeString('an artist')
+    .pauseFor(2000)
+    .deleteAll()
     .start();
