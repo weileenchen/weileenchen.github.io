@@ -1,21 +1,38 @@
-//https://www.npmjs.com/package/typewriter-effect
+//PROJECTS PAGE
 
-var iAm = document.getElementById('iAm');
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-var typewriter = new Typewriter(iAm, {
-    loop: true
-});
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+    })
+})
 
-typewriter.typeString('a student')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('a coder')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('a creator')
-    .pauseFor(2000)
-    .deleteAll()
-    .typeString('an artist')
-    .pauseFor(2000)
-    .deleteAll()
-    .start();
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+        closeModal(modal)
+    })
+}
+)
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+    })
+})
+
+function openModal(modal) {
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+}
