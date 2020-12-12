@@ -18,22 +18,59 @@
                 <div class="title">PROJECTS</div>
             <div class="row"></div>
             <div class="projects">
-                <button data-modal-target="#modal"> <img src="./assets/images/clock.jpg"> </button>
+                <button data-modal-target="#clock"> <img src="./assets/images/clock.jpg"> </button>
                 
-                <div class="modal" id="modal">
+                <div class="modal" id="clock">
                     <div class="modal-header">
                         <div class="title">C L O C K</div>
+                        <button data-close-button class="close-button"> &times; </button> 
+                    </div>
+                    <div class="modal-body">
+                        &#8226 a real-time clock using JQuery, HTML and CSS
+                        <br> <br>
+                        &#8226 includes options to toggle the clock from Analog to Digital and 12 Hours to 24 Hours
+                    </div>
+                </div>
+                <button data-modal-target="#midterm"> <img src="./assets/images/midterm.jpg"> </button>
+                <div class="modal" id="midterm">
+                    <div class="modal-header">
+                        <div class="title">Make a Guess</div>
+                        <button data-close-button class="close-button"> &times; </button> 
+                    </div>
+                    <div class="modal-body">
+                        &#8226 an interactive website using HTML and CSS
+                        <br><br>
+                        &#8226 gives a set of images and asks questions to make assumptions
+                        <br><br>
+                        &#8226 intended to bring self-awareness to implicit bias
+                    </div>
+                </div>
+                <button data-modal-target="#escapeRoom"> <img src="./assets/images/escapeRoom.png"> </button>
+                <div class="modal" id="escapeRoom">
+                    <div class="modal-header">
+                        <div class="title">Dungeon Escape</div>
+                        <button data-close-button class="close-button"> &times; </button> 
+                    </div>
+                    <div class="modal-body">
+                        &#8226 a third-person Escape game using GameMaker Studio 2
+                        <br> <br>
+                        &#8226 allows the user to choose between two different players to control and interact with
+                        <br> <br>
+                        &#8226 includes multiple rooms, an interactive inventory, and various types of clues for the user to explore
+                    </div>
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <div class="projects">
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title">FILLER</div>
                         <button data-close-button class="close-button"> &times; </button> 
                     </div>
                     <div class="modal-body">
                         blah blah blah Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum pariatur facere necessitatibus aliquid voluptas assumenda dolore fugiat iste debitis odit accusantium molestiae, repellat quae vero ex soluta. Natus, atque corporis vel saepe quod asperiores alias, fuga aperiam possimus, magni commodi doloremque enim reiciendis praesentium. Ullam doloribus modi reiciendis ratione beatae, saepe eos, expedita exercitationem unde sapiente officiis. 
                     </div>
                 </div>
-                <button data-modal-target="#modal"> <img src="./assets/images/midterm.jpg"> </button>
-                <button data-modal-target="#modal"> <img src="./assets/images/escapeRoom.png"> </button>
-            </div>
-            <div id="overlay"></div>
-            <div class="projects">
                 <button data-modal-target="#modal"> <img src="./assets/images/filler.jpg"> </button>
                 <button data-modal-target="#modal"> <img src="./assets/images/filler.jpg"> </button>
                 <button data-modal-target="#modal"> <img src="./assets/images/filler.jpg"> </button>

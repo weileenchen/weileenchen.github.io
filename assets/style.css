@@ -220,6 +220,7 @@
 
 .projects > button > img:hover {
   filter: invert(20%);
+  cursor: pointer;
 }
 
 .projects > button {
@@ -239,12 +240,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
+  transition: 400ms ease-in-out;
   border-radius: 5px;
   z-index: 10;
   background: white;
   width: 50%;
   padding: 2vw;
+}
+
+.modal-body {
+  min-height: 10vw;
+  padding-left: 1vw;
 }
 
 .modal.active {

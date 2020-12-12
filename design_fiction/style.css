@@ -11,6 +11,19 @@
     /*background-color: #edf6fd;*/
     background-color: rgba(163, 185, 202, 0.5);
 }
+
+.row {
+  display: flex;
+  margin: 2vw;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 15vw;
+  height: 100%;
+  margin: 2vw;
+}
+
 .navbar {
     margin: 3vw;
     font-size: 2vw;
@@ -61,6 +74,5 @@
 
   .text {
     animation: fadeIn ease 2s;
-    margin: 2vw;
     font-size: 1.25vw;
   }
