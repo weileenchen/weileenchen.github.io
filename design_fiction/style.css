@@ -1,6 +1,6 @@
 * {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -63,6 +63,13 @@ img {
     justify-content: center;
   }  
 
+  #book-title {
+    animation: fadeIn ease 2s;
+    font-size: 4vw;
+    font-weight: bold; 
+    color: rgb(104, 104, 104);
+  }
+
   .title {
     animation: fadeIn ease 2s;
     font-size: 2vw;
@@ -75,4 +82,88 @@ img {
   .text {
     animation: fadeIn ease 2s;
     font-size: 1.25vw;
+    margin: 2vw;
   }
+
+  .choice {
+    margin: 2vw;
+    padding: 2vw;
+    background-color:rgb(216, 215, 215);
+    border-radius: 5px;
+    color: rgb(104, 104, 104);
+    text-align: center;
+  }
+
+  .choice-options {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vw 2vw 0 2vw;
+  }
+
+  .choice-options > a {
+    text-align: center;
+    min-width: 15vw;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+  }
+
+  .choice-options > a:hover {
+    text-shadow: 1px 1px 1px #aaa;
+  }
+
+  .ellipses {
+    text-align: center;
+    margin: 2vw;
+  }
+
+  .fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
