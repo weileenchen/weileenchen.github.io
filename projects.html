@@ -16,36 +16,22 @@
         <div class="content">
             <div class="fadeIn">
                 <div class="title">PROJECTS</div>
-            <div class="row"></div>
             <div class="projects">
-                <button data-modal-target="#clock"> <img src="./assets/images/clock.jpg"> </button>
-                
-                <div class="modal" id="clock">
+                <button data-modal-target="#taskTracker"> <img src="./assets/images/taskTracker.png" alt="Image of the Task Tracker app"> </button>
+                <div class="modal" id="taskTracker">
                     <div class="modal-header">
-                        <div class="title">C L O C K</div>
+                        <div class="title">Task Tracker</div>
                         <button data-close-button class="close-button"> &times; </button> 
                     </div>
                     <div class="modal-body">
-                        &#8226 a real-time clock using JQuery, HTML and CSS
+                        &#8226 a CRUD application using React and Node.js that tracks, deletes and modifies the user’s tasks
                         <br> <br>
-                        &#8226 includes options to toggle the clock from Analog to Digital and 12 Hours to 24 Hours
+                        &#8226 color codes the tasks by level of severity scaled 1 - 3
+                        <br><br>
+                        &#8226 includes a form component that allows users to add new tasks
                     </div>
                 </div>
-                <button data-modal-target="#midterm"> <img src="./assets/images/midterm.jpg"> </button>
-                <div class="modal" id="midterm">
-                    <div class="modal-header">
-                        <div class="title">Make a Guess</div>
-                        <button data-close-button class="close-button"> &times; </button> 
-                    </div>
-                    <div class="modal-body">
-                        &#8226 an interactive website using HTML and CSS
-                        <br><br>
-                        &#8226 gives a set of images and asks questions to make assumptions
-                        <br><br>
-                        &#8226 intended to bring self-awareness to implicit bias
-                    </div>
-                </div>
-                <button data-modal-target="#escapeRoom"> <img src="./assets/images/escapeRoom.png"> </button>
+                <button data-modal-target="#escapeRoom"> <img src="./assets/images/escapeRoom.png" alt="Image of the Escape Room's home screen"> </button>
                 <div class="modal" id="escapeRoom">
                     <div class="modal-header">
                         <div class="title">Dungeon Escape</div>
@@ -60,8 +46,36 @@
                     </div>
                 </div>
             </div>
+            <div class="projects">
+                <button data-modal-target="#clock"> <img src="./assets/images/clock.jpg" alt="Image of 24 hour analog clock"> </button>
+                
+                <div class="modal" id="clock">
+                    <div class="modal-header">
+                        <div class="title">C L O C K</div>
+                        <button data-close-button class="close-button"> &times; </button> 
+                    </div>
+                    <div class="modal-body">
+                        &#8226 a real-time clock using JQuery, HTML and CSS
+                        <br> <br>
+                        &#8226 includes options to toggle the clock from Analog to Digital and 12 Hours to 24 Hours
+                    </div>
+                </div>
+                <button data-modal-target="#midterm"> <img src="./assets/images/midterm.jpg" alt="Image of the first page of interactive website"> </button>
+                <div class="modal" id="midterm">
+                    <div class="modal-header">
+                        <div class="title">Make a Guess</div>
+                        <button data-close-button class="close-button"> &times; </button> 
+                    </div>
+                    <div class="modal-body">
+                        &#8226 an interactive website using HTML and CSS
+                        <br><br>
+                        &#8226 gives a set of images and asks questions to make assumptions
+                        <br><br>
+                        &#8226 intended to bring self-awareness to implicit bias
+                    </div>
+                </div>
+            </div>
             <div id="overlay"></div>
-            <div class="row"></div>
             </div>
         </div>
     </body>

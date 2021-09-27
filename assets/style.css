@@ -1,64 +1,68 @@
 * {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
 }
 
 #homepage {
-    min-height: 100%;
-    overflow: hidden;
-    background: linear-gradient(rgba(175, 175, 175, 0.3),rgba(175, 175, 175, 0.3)), url(./images/alaska.jpg) no-repeat top center;
-    background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba(175, 175, 175, 0.3),
+      rgba(175, 175, 175, 0.3)
+    ),
+    url(./images/alaska.jpg) no-repeat top center;
+  background-size: cover;
 }
 .fade-in {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -67,57 +71,61 @@
 }
 
 #open-screen {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #h1 {
-    /*font-family: 'Quicksand', sans-serif;*/
-    color: white;
-    font-size: 5vw;
-    font-weight: lighter;
+  /*font-family: 'Quicksand', sans-serif;*/
+  color: white;
+  font-size: 5vw;
+  font-weight: lighter;
 }
 
 #h2 {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    font-size: 3vw;
-    padding: 1vw;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 3vw;
+  padding: 1vw;
 }
 
 #iAm {
-    color: white;
-    padding-left: 1vw;
+  color: white;
+  padding-left: 1vw;
 }
 
 .navbar_home {
-    font-size: 2vw;
-    display: flex;
-    flex-direction: row;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar_home > a {
-    color: white;
-    padding: 1vw;
+  color: white;
+  padding: 1vw;
 }
 
 .navbar_home > a:hover {
-    color: rgb(159, 159, 160);
+  color: rgb(159, 159, 160);
 }
 
 .pages {
-    /*background-color: #d6e4ee;*/
-    display: flex;
-    flex-direction: column;
-    /*background-color: #edf6fd;
+  /*background-color: #d6e4ee;*/
+  display: flex;
+  flex-direction: column;
+  /*background-color: #edf6fd;
     background-color: rgba(163, 185, 202, 0.5);*/
-    background: linear-gradient(rgba(175, 175, 175, 0.3),rgba(175, 175, 175, 0.3)), url(./images/alaska.jpg) no-repeat top center;
-    background-size: cover;
+  background: linear-gradient(
+      rgba(175, 175, 175, 0.3),
+      rgba(175, 175, 175, 0.3)
+    ),
+    url(./images/alaska.jpg) no-repeat top center;
+  background-size: cover;
 }
 
 .navbar {
@@ -129,7 +137,7 @@
 }
 
 .selected {
-  color:white;
+  color: white;
   font-weight: normal;
   text-shadow: none;
   cursor: default;
@@ -139,7 +147,6 @@
   color: white;
   padding: 1vw;
 }
-
 
 .navbar > a:hover {
   color: rgb(117, 117, 117);
@@ -155,7 +162,7 @@
 
 .content {
   /*background-color: rgba(181, 190, 197, 0.5);*/
-  background-color: rgba(255,255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -178,7 +185,6 @@
   border-radius: 5px;
 }
 
-
 /*ABOUT*/
 #skills {
   margin: 2vw 0 2vw 0;
@@ -192,6 +198,7 @@
 
 .skills-hover {
   display: flex;
+  min-width: 12%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -203,17 +210,16 @@
   margin: 1vw;
 }
 
-.skills > div > label{
+.skills > div > label {
   margin: 0.5vw 0 0 0;
   font-size: 1vw;
   text-align: center;
   width: 100%;
 }
 
-
 /*PROJECTS*/
 .projects {
-  margin-top: 2vw;
+  margin: 2vw;
   display: flex;
   justify-content: space-evenly;
 }
@@ -231,8 +237,8 @@
 
 .projects > button > img {
   border-radius: 5px;
-  width: 15vw;
-  height: 15vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .modal {
@@ -279,7 +285,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -287,7 +293,6 @@
   pointer-events: all;
   opacity: 1;
 }
-
 
 /*CONTACT FORM*/
 #contact-form {
@@ -297,7 +302,7 @@
 }
 
 form {
-  color: rgb(117, 117, 117);;
+  color: rgb(117, 117, 117);
 }
 
 label {
