@@ -6,13 +6,13 @@ var typewriter = new Typewriter(iAm, {
     loop: true
 });
 
-typewriter.typeString('a student')
+typewriter.typeString('a creator')
     .pauseFor(2000)
     .deleteAll()
     .typeString('a coder')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('a creator')
+    .typeString('an engineer')
     .pauseFor(2000)
     .deleteAll()
     .typeString('an artist')
